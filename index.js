@@ -14,6 +14,7 @@ require('dotenv').config();
 //tells node to run on port 3000 and when it gets a 200 to log that is listening 
 app.listen(3000, () => console.log('listening at port 3000')); 
 // tells express to run the files in the public folder
+// new static direction rather than public file I updated to just use the directory
 app.use(express.static(__dirname)); 
 app.use(express.json({ limit: '1mb' }));
 
